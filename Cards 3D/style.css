@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #eee;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.cards * {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.card {
+    width: 17em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2)
+    0 7px 29px 0px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    margin: 2em; 
+}
+
+.card img {
+    width: 15em;
+    top: -1em;
+    left: 5em;
+    position: absolute;
+    right: -4em;
+    filter: drop-shadow(
+        0 10px 25px rgba(0,0,0,0.5)
+    );
+}
+
+.content {
+    padding: 1em;
+}
+
+.card h2 {
+    color: #fff;
+    margin: 0 0 0 0.8em;
+    margin-top: -10px;
+    z-index: 1;
+    text-shadow: rgba(100, 100, 111, 0.2)
+    0 7px 29px 0px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    transform: translateZ(20px);
+    font-family: 'Inter', sans-serif;
+}
+
+.img-fundo .logo {
+    position: relative;
+    opacity: .4;
+}
+
+.banner {
+    height: 15em;
+    background: linear-gradient(90deg, #fb3854 0%, #901026 100%);
+    width: 100%;
+    padding-top: 3em;
+    border-radius: 10px 10px 50% 50%;
+    overflow: hidden;
+}
+
+.cart {
+    background: linear-gradient(90deg,#fb3854 0%, #901026 100%);
+    padding: 1em 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 2em;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: 700;
+    box-shadow: 0 5px 15px rgba(251, 56, 84, 0.2);
+    cursor: pointer;
+}
+
+.pop {
+    transform: translateZ(20px);
+}
+
+.card:nth-child(1) img {
+    width: 15em;
+    top: -1em;
+    left: 5em;
+}
